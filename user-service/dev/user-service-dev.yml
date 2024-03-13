@@ -1,0 +1,19 @@
+server:
+  port: 8081  # Adjusted port to avoid conflicts
+
+spring:
+  application:
+    name: user-service  # Application name
+  datasource:  # Database configuration (replace placeholders with actual values)
+    url: jdbc:mysql://localhost:3306/user_service
+    username: user_service
+    password: Pa$$w0rd@app  # Placeholder for security (replace with a strong password)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/dev  # Assuming Eureka Server on localhost:8761
+
+zuul:
+  routes:  # Routes configuration (add specific route definitions)
