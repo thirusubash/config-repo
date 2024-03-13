@@ -3,7 +3,14 @@ port: 8080
 
 spring:
 application:
-name: userservice
+name: users-service
+
+logging:
+level:
+  root: INFO
+  com.example.userservice: DEBUG
+
+
 
 eureka:
 client:

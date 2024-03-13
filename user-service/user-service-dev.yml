@@ -3,7 +3,7 @@ port: 8080
 
 spring:
 application:
-name: userservice
+name: user-service
 
 eureka:
 client:
