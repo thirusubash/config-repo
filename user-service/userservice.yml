@@ -1,14 +1,24 @@
 server:
-port: 8080
+  port: 8080
 
 spring:
-application:
-name: userservice
+  application:
+    name: user-service
 
-eureka:
-client:
-service-url:
-defaultZone: http://localhost:8761/eureka/
+  # Database configuration for MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_service  # Replace with your database URL
+    username: user_service  # Replace with your database username
+    password: Pa$$w0rd@user  # Replace with your database password
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Driver class for MySQL
 
-zuul:
-routes:
+  # Eureka client configuration (assuming unchanged)
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+
+  # Zuul configuration (assuming unchanged)
+  zuul:
+    routes:
+      # ... your routes configuration here
