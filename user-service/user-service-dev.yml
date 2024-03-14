@@ -13,7 +13,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/dev  # Assuming Eureka Server on localhost:8761
+      defaultZone: http://localhost:8761/  # Assuming Eureka Server on localhost:8761
 
 zuul:
   routes:  # Routes configuration (add specific route definitions)
+
+
+custom:  # Create a section named 'custom' for your properties
+  test: Hello from YAML! 
