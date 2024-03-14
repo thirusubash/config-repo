@@ -21,3 +21,6 @@ spring:
 user-service:
   api:
     base-url: http://localhost:8080  # Set base URL for the user service API
+
+custom:  # Create a section named 'custom' for your properties
+  test: Hello from prod! 
