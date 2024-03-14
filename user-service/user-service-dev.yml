@@ -13,7 +13,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/  # Assuming Eureka Server on localhost:8761
+      defaultZone: http://192.168.0.153:8761/  # Assuming Eureka Server on localhost:8761
 
 zuul:
   routes:  # Routes configuration (add specific route definitions)
