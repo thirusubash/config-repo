@@ -1,0 +1,14 @@
+server:
+  port: 8081  # Adjusted port to avoid conflicts
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.153:8761/eureka/  
+
+zuul:
+  routes:  # Routes configuration (add specific route definitions)
+
+
+custom:  # Create a section named 'custom' for your properties
+  test: Hello from dev! 

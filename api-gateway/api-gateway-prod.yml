@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+
+  # Configuration for user-service (development profile)
+  datasource:
+    url: jdbc:mysql://192.168.0.153:3306/user_service  # Replace with your actual database name
+    username: user_service  # Replace with your database username
+    password: Pa$$w0rd@app  # Replace with your database password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # Update schema automatically in development environment
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect  # Set dialect for MySQL 8
+
+# Additional configurations specific to the user-service application
+user-service:
+  api:
+    base-url: http://192.168.0.153:8080  # Set base URL for the user service API
+
+custom:  # Create a section named 'custom' for your properties
+  test: Hello from prod! 
