@@ -9,6 +9,10 @@ spring:
     username: user_service
     password: Pa$$w0rd@app  # Placeholder for security (replace with a strong password)
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+    ddl-auto: update
+    
 
 eureka:
   client:
