@@ -14,7 +14,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        hbm2ddl.auto: create-drop
+        hbm2ddl.auto: create
     
 
 eureka:
